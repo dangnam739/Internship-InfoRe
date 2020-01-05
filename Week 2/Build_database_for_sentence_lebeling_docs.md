@@ -1,4 +1,4 @@
-#Build Database for sentence-labeling
+# Build Database for sentence-labeling
 
 ### 1. Create Tables
 

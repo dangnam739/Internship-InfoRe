@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS labeled_sentences(
 	note TEXT DEFAULT NULL
 );
 
+#Sample Data
 INSERT INTO unlabeled_sentences (sentence_id, content, negative, positive, source)
 VALUES
 	('a0001', 'ib thì sáng đến tối không rep lại, gọi điện cũng k thấy onl để đặt đồ. hôm sau đặt qua web chờ 4 hôm gọi lại thì kêu đơn trên web không ai nhận. không hiểu đi xin hay đi mua đồ nữa', 7, 4, 'facebook'),

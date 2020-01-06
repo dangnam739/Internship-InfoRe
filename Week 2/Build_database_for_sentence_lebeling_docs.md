@@ -101,5 +101,7 @@ def get_label(sentence):
         connection.commit()
 ```
 
-[Create table]()
-[Code](https://github.com/dangnam739/Internship-InfoRe/blob/master/Week%202/check_label.py)
+
+[Create table](https://github.com/dangnam739/Internship-InfoRe/blob/master/Week%202/javy_db.sql)
+
+[Code for write function](https://github.com/dangnam739/Internship-InfoRe/blob/master/Week%202/check_label.py)

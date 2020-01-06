@@ -1,6 +1,6 @@
 import psycopg2
 
-
+#class Sentence to save information of sentence from table
 class Sentence:
     def __init__(self, row):
         self.sentence_id = row[0]

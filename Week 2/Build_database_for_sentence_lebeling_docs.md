@@ -61,6 +61,21 @@ CREATE TABLE IF NOT EXISTS labeled_sentences(
 
 ### 2. Write function
 
+**a. check_labeled()**
+
+Chức năng: Kiểm tra một câu đã đủ điều kiện để dán nhãn hay chưa.
+
+```python
+#Function check condition of sentence to move to labeled_sentences
+def check_labeled(sentence):
+    if((sentence.negative + sentence.positive) == 11):
+        return 1
+```
+
+**b. get_label()**
+
+Chức năng: Xác định nhãn của câu đẫ đủ điều kiện để dán nhãn. Sau đó xóa khỏi bảng `unlabeled_sentences` và thêm vào bảng `labeled_sentences`.
+
 ```python
 def get_label(sentence):
     if(check_labeled(sentence)):
@@ -85,3 +100,6 @@ def get_label(sentence):
         cursor.execute(insert_query, record_to_insert)
         connection.commit()
 ```
+
+[Create table]()
+[Code](https://github.com/dangnam739/Internship-InfoRe/blob/master/Week%202/check_label.py)

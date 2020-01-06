@@ -16,7 +16,7 @@ connection = psycopg2.connect(user='postgres',
                               password='123456',
                               host='127.0.0.1',
                               port='5432',
-                              database='javy_db')
+                              database='sentence_db')
 cursor = connection.cursor()
 
 #Get data from table unlabeled_sentences
